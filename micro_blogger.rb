@@ -12,11 +12,10 @@ class MicroBlogger
     if message.length <= 140
       @client.update(message)
     else
-      "The post is too long
+      "The post is too long"
     end
   end
 
 end
 
 blogger = MicroBlogger.new
-blogger.tweet("Gem Initialized")
